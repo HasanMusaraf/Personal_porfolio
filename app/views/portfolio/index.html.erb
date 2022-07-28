@@ -1,3 +1,5 @@
+<!-- Home page -->
+
 <div class="container-fluid back text-white">
 
     <div class="container text-center position-relative top-50" id="home">
@@ -14,18 +16,30 @@
 
 </div>
 
-<hr class="text-white">
+<hr class="text-warning">
+
+
+<!-- About me -->
 
 <div class="container text-center my-5 text-white" id="about">
-    <h1 class="mb-5 ">About <strong>Me</strong></h1>
-    <p class="">My name is Mohamed Hasan Musaraf from chennai and I have a Diploma mechanical engineering background but am
+    <h1 class="mb-5 ">About <strong class="text-warning">Me</strong></h1>
+    <p class="fs-4">My name is Mohamed Hasan Musaraf from chennai and I have a Diploma mechanical engineering background but
+        am
         passionate in the IT field .My skills I have knowledge in both FRONT END and BACK END. My strength is that I can
         work under pressure.</p>
+<div class="row gap-5 d-flex my-5 justify-content-center">
+    <%= image_tag("back.jpg", class:"img-fluid  col-md-5 border-0") %>
+    <div class="col-xl-5  ">
+        <div class="my-details">
+            <h3 class="border p-5 bg-warning"><em class="bi bi-geo-alt-fill "></em><br> <p class="pt-2">India</p> </h3>
+            <h3 class="border p-5 bg-warning"><em class="bi bi-telephone-fill"></em><br> <p class="pt-2">9080641773</p></h3>
+            <h3 class="border p-5 bg-warning "><em class="bi bi-envelope-fill"></em><br> <p class="pt-2 ">hasanmusaraf786@gmail.com</p> </h3>
+        </div>
+    </div>
+</div>
+        <h1 class="my-5 text-warning"><small class="text-white">My</small> Skills</h1>
 
-    <%= image_tag("back.jpg", class:"img-fluid img-thumbnail") %>
-        <h1 class="my-5">Skills</h1>
-
-        <div class="container d-flex row">
+        <div class="container d-flex row ">
             <h2 class="col "><img src="https://img.icons8.com/color/96/000000/html-5--v1.png" /></h2>
             <h2 class="col "><img src="https://img.icons8.com/color/96/000000/css3.png" /></h2>
             <h2 class="col "><img src="https://img.icons8.com/fluency/96/000000/javascript.png" /> </h2>
@@ -38,11 +52,12 @@
         </div>
 </div>
 
-<hr class="text-white">
+<hr class="text-warning">
 
+<!-- Gallery page -->
 
 <div class=" text-center  mx-5 my-5 text-white" id="gallery">
-    <h1>Gallery</h1>
+    <h1 class="text-warning"><small class="text-white">My</small> Gallery</h1>
     <div class="row my-5 pe-2 ">
         <%= image_tag("p1.JPG", class:"img-fluid img-thumbnail col-md-3") %>
             <%= image_tag("p2.JPG", class:"img-fluid img-thumbnail col-md-3") %>
@@ -64,51 +79,116 @@
 
 </div>
 
-<hr class="text-white">
+<hr class="text-warning">
 
+<!-- Portfolio -->
 
 <div class="container my-5 port text-white" id="portfolio">
-    <h1 class="my-5 text-center">Portfolio</h1>
+    <h1 class="my-5 text-center text-warning"><small class="text-white">Project</small> Portfolio</h1>
 
-    <p class="py-5 my-5 fs-4 px-5 text-center bg-success text-white">"These are the project I have done in my IT career. In initial stage I faced lot of struggle to work on my project but atlast I made it". </p>
+    <p class="py-5 my-5 fs-4 px-5 text-center bg-warning text-white">"These are the project I have done in my IT career.
+        In initial stage I faced lot of struggle to work on my project but atlast I made it". </p>
 
-    <div class="row">
-        <div class="card col-lg-3 text-white Regular shadow ">
-            <a href="#"><%= image_tag("cal.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ") %></a>
-            <div class="card-img-overlay">
+    <div class="row gap-2">
+      <div class="card col-md text-white Regular shadow ">
+        <a href="#">
+            <%= image_tag("anna.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ", style:" height:330px") %>
+        </a>
+        <div class="card-img-overlay ">
+            <a href="#" class="btn btn-primary">View</a>
+            <a href="#" class="btn btn-success">Anna University</a>
+        </div>
+      </div>
+
+      <div class="card col-md text-white Regular shadow ">
+        <a href="#">
+            <%= image_tag("cal.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ") %></a>
+        <div class=" card-img-overlay">
                 <a href="#" class="btn btn-primary">View</a>
                 <a href="#" class="btn btn-success">Calculator</a>
-            </div>
-
         </div>
 
-        <div class="card col-lg-3 text-white Regular shadow ">
-            <a href="#"><%= image_tag("anna.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ", style:"height:330px") %></a>
-            <div class="card-img-overlay ">
-                <a href="#" class="btn btn-primary">View</a>
-                <a href="#" class="btn btn-success">Anna University</a>
-            </div>
+   </div>
+
+
+
+      <div class="card col-md text-white Regular shadow ">
+        <a href="#">
+            <%= image_tag("bms.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ", style:" height:330px") %>
+        </a>
+        <div class="card-img-overlay ">
+            <a href="#" class="btn btn-primary">View</a>
+            <a href="#" class="btn btn-success">BookMyShow</a>
         </div>
+      </div>
 
-        <div class="card col-lg-3 text-white Regular shadow ">
-            <a href="#"><%= image_tag("bms.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ", style:"height:330px") %></a>
-            <div class="card-img-overlay ">
-                <a href="#" class="btn btn-primary">View</a>
-                <a href="#" class="btn btn-success">BookMyShow</a>
-            </div>
+      <div class="card col-md text-white Regular shadow ">
+        <a href="#">
+            <%= image_tag("todo.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ", style:" height:330px") %>
+        </a>
+        <div class="card-img-overlay ">
+            <a href="#" class="btn btn-primary">View</a>
+            <a href="#" class="btn btn-success">Todo</a>
         </div>
-
-        <div class="card col-lg-3 text-white Regular shadow ">
-            <a href="#"><%= image_tag("todo.png", class:"card-img pt-3 pb-3 img-thumbnail border-0 ", style:"height:330px") %></a>
-            <div class="card-img-overlay ">
-                <a href="#" class="btn btn-primary">View</a>
-                <a href="#" class="btn btn-success">Todo</a>
-            </div>
-        </div>
+       </div>
 
 
-    </div>
+   </div>
 
 </div>
 
-<hr class="text-white">
+<hr class="text-warning">
+
+<!--  Contact page  -->
+<section id="contact" class="contact text-white my-5">
+    <div class="container">
+
+        <div class="section-title">
+            <h1 class="text-warning text-center my-5"><small class="text-white">For</small> Contact</h1>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+
+        <div class="row  gap-5" data-aos="fade-in">
+
+            <div class="col-lg-4 mt-4">
+                <iframe width="440" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=postal%20audit%20colony&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="form-group col-md-6 ">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="form-control bg-secondary" id="name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Email</label>
+                            <input type="email" class="form-control bg-secondary" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control bg-secondary" name="subject" id="subject" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="name">Message</label>
+                        <textarea class="form-control bg-secondary" name="message" rows="10" required></textarea>
+                    </div>
+                    <!-- <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div> -->
+                    <div class="text-center my-5"><button type="submit" class="btn btn-success">Send Message</button></div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</section> 
+<!-- End Contact Section -->
+
+
